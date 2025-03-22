@@ -260,57 +260,141 @@ a:hover {
   margin-bottom: 30px;
 }
 
-/* Contact Section */
-.contact {
+/* Contact Form Section */
+.contact-form {
   padding: 50px 0;
   background: #f9f9f9;
-  text-align: center;
 }
 
-.contact h2 {
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff4500; /* Fiery Orange */
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
   margin-bottom: 20px;
 }
 
-.contact p {
-  margin: 10px 0;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
   color: #333;
 }
 
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #4b0082; /* Deep Purple */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ff4500; /* Fiery Orange */
+}
+
+/* Footer Styles */
+footer {
+  padding: 50px 0 20px 0;
+  background: #4b0082; /* Deep Purple */
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  color: #ff4500; /* Fiery Orange */
+}
+
+.footer-section p {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffd700; /* Gold */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
 .social-links {
-  margin-top: 20px;
+  display: flex;
+  gap: 15px;
 }
 
 .social-links a {
-  margin: 0 10px;
+  color: white;
   font-size: 1.5rem;
-  color: #4b0082; /* Deep Purple */
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #ff6f61; /* Lighter Orange */
-}
-
-/* Footer */
-footer {
-  padding: 20px 0;
-  background: #4b0082; /* Deep Purple */
-  color: white;
-  text-align: center;
-}
-
-.footer-links {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: white;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
   color: #ffd700; /* Gold */
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ddd;
 }
 
 /* Live Chat Widget */
